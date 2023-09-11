@@ -11,10 +11,12 @@ const center = {
     lng: 106.869143
 };
 
+const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
+
 export default function MainPageMap() {
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyBza2M7UpFulG3Q2KlE5ZWZb4KmIaM40E4"
+        googleMapsApiKey: googleMapsApiKey
     })
     return isLoaded ? (
         <GoogleMap
