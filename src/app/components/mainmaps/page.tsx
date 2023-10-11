@@ -28,6 +28,5 @@ export default function MainPageMap() {
             { /* Child components, such as markers, info windows, etc. */}
             <Marker position={center}></Marker>
         </GoogleMap>
-
     ) : <></>
 }

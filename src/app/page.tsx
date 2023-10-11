@@ -1,3 +1,5 @@
+//homepage.tsx
+
 'use client'
 import React from 'react'
 import Image from 'next/image'
@@ -5,21 +7,54 @@ import Link from 'next/link'
 import { Baloo_2 } from 'next/font/google'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import MainPageMap from './components/mainmaps/page'
+import MainPageMap from '@/app/components/mainmaps/page'
+import Navbar from '@/app/components/navbar/page'
+import Footer from '@/app/components/footer/page'
 
 const baloo = Baloo_2({
   subsets: ['latin'],
 })
 
 export default function Home() {
-  return (
+  return (<>
+    {/* Catatan:
+            Special Programs:
+            - Islamic Learning (iqro, hafalan surat, hadits dan doa pendek, asmaul husna)
+            - Pramuka cilik (pra-siaga)
+            - Fun cooking
+            - Market Day
+            - Gardening
+            - Field Trip
+            Sentra Balok ilang, Movie day ilang.
+
+            Daily Program:
+            - Morning Diary
+            - Opening
+            - Circle time
+            - 2 kali snack, 2 kali makan
+            - Mandi Sore
+            - Evening Diary
+
+            Foto Owner, guru-guru, sertifikat al-falah.
+
+            Deskripsi Harga & Promo
+
+            Usia 18 bulan - 6 tahun
+
+            Laporan harian, Laporan triwulan
+
+            
+        */}
+    <header>
+      <title>Nurfahmi Daycare</title>
+    </header>
+    <Navbar></Navbar>
     <main className={baloo.className}>
-      <div className='bg-gradient-to-t from-cyan-400 to-white bg-[length:10000px_600px] bg-no-repeat'>
+      <div className='bg-gradient-to-t from-cyan-400 to-white bg-[length:10000px_570px] bg-no-repeat'>
         {/* Hero Section */}
         <div className='mx-auto max-w-screen-xl'>
-          <h1 className='mt-12 text-center text-6xl text-amber-400 font-bold'>NURFAHMI SCHOOL START</h1>
-          <p className='text-zinc-600 text-2xl text-center mt-10 mx-48 font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. </p>
+          <h1 className='mt-12 text-center text-6xl text-amber-400 font-bold'>NURFAHMI DAYCARE</h1>
+          <p className='text-zinc-600 text-2xl text-center mt-10 mx-48 font-bold'>We provide your child with nurturing care and valuable knowledge</p>
           <div>
             <div className='w-full text-center mt-9'>
               <Link className='text-center py-2 px-4 rounded-xl text-xl text-white bg-blue-500'
@@ -200,7 +235,9 @@ export default function Home() {
           </div>
         </div>
         {/* Footer */}
+        <Footer></Footer>
       </div>
     </main>
+  </>
   )
 }
