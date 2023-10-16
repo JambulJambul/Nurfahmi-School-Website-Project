@@ -50,23 +50,25 @@ export default function Home() {
     </header>
     <Navbar></Navbar>
     <main className={baloo.className}>
-      <div className='bg-gradient-to-t from-cyan-400 to-white bg-[length:10000px_570px] bg-no-repeat'>
+      <div>
         {/* Hero Section */}
-        <div className='mx-auto max-w-screen-xl'>
-          <h1 className='mt-12 text-center text-6xl text-amber-400 font-bold'>NURFAHMI DAYCARE</h1>
-          <p className='text-zinc-600 text-2xl text-center mt-10 mx-48 font-bold'>We provide your child with nurturing care and valuable knowledge</p>
-          <div>
-            <div className='w-full text-center mt-9'>
-              <Link className='text-center py-2 px-4 rounded-xl text-xl text-white bg-blue-500'
-                href={"https://docs.google.com/forms/d/e/1FAIpQLScSJeSatDSZGKoqB4M5ghURY5fz41KbqseWU24GMfyQxqs2aw/formResponse"}>Register Now</Link>
-            </div>
-            <div className='relative mx-auto w-[1104px] h-[500px]'>
-              <Image
-                src="/kindergarten-hero.png"
-                alt="hero"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+        <div className='bg-gradient-to-t from-cyan-400 to-white bg-[length:10000px_570px] bg-no-repeat'>
+          <div className='mx-auto max-w-screen-xl'>
+            <h1 className='mt-12 text-center text-6xl text-amber-400 font-bold'>NURFAHMI DAYCARE</h1>
+            <p className='text-zinc-600 text-2xl text-center mt-10 mx-48 font-bold'>We provide your child with nurturing care and valuable knowledge</p>
+            <div>
+              <div className='w-full text-center mt-9'>
+                <Link className='text-center py-2 px-4 rounded-xl text-xl text-white bg-blue-500'
+                  href={"https://docs.google.com/forms/d/e/1FAIpQLScSJeSatDSZGKoqB4M5ghURY5fz41KbqseWU24GMfyQxqs2aw/formResponse"}>Register Now</Link>
+              </div>
+              <div className='relative mx-auto w-[1104px] h-[500px]'>
+                <Image
+                  src="/kindergarten-hero.png"
+                  alt="hero"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
         </div>
