@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Poppins } from 'next/font/google';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { ContactUs } from '@/app/(homepage)/contact-us-modal/page';
+import ContactUs from '@/app/(homepage)/contact-us-modal/page';
 
 
 const poppins = Poppins({

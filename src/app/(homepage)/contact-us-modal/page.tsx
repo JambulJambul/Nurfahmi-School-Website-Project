@@ -5,7 +5,13 @@ import Image from 'next/image';
 import { Fragment } from "react";
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
-export function ContactUs({ isDisplayed, onClose }: { isDisplayed: boolean; onClose: () => void }) {
+export default function ContactUs({
+    isDisplayed = false,
+    onClose,
+}: {
+    isDisplayed: boolean;
+    onClose: () => void;
+}) {
     return (
         <>
             <Transition show={isDisplayed} as={Fragment}>
