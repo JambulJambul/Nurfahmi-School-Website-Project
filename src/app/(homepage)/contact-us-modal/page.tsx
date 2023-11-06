@@ -1,3 +1,4 @@
+"use client"
 import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from 'next/image';
