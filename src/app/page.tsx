@@ -61,7 +61,7 @@ export default function Home() {
                 <Link className='text-center py-2 px-4 rounded-xl text-xl text-white bg-blue-500'
                   href={"https://docs.google.com/forms/d/e/1FAIpQLScSJeSatDSZGKoqB4M5ghURY5fz41KbqseWU24GMfyQxqs2aw/formResponse"}>Register Now</Link>
               </div>
-              <div className='relative mx-auto w-[300px] h-[150px] md:w-[600px] md:h-[300px] xl:w-[1024px] xl:h-[500px]'>
+              <div className='relative mx-auto w-[270px] h-[150px] md:w-[600px] md:h-[300px] xl:w-[1024px] xl:h-[500px]'>
                 <Image
                   src="/kindergarten-hero.png"
                   alt="hero"
@@ -98,7 +98,7 @@ export default function Home() {
             <h2 className='text-center text-amber-400 text-3xl md:text-4xl lg:text-5xl font-semibold'>Gallery</h2>
             <div className='mt-24 text-center'>
               <Carousel
-                className='mx-12 sm:mx-32 lg:mx-64 inline-block'
+                className='sm:mx-32 lg:mx-64 inline-block'
                 autoPlay={true}
                 interval={10000}
                 transitionTime={1000}
@@ -131,15 +131,15 @@ export default function Home() {
                 }}
               >
                 <div>
-                  <img className='rounded-xl h-full object-cover' src="/program-balok.png" />
+                  <img className='sm:rounded-xl h-full object-cover' src="/program-balok.png" />
                   <h3 className='text-center mt-8 text-xl md:text-2xl font-light text-zinc-600'>Sentra Balok</h3>
                 </div>
                 <div>
-                  <img className='rounded-xl h-fp-6 ull object-cover' src="/program-dokter.png" />
+                  <img className='sm:rounded-xl h-full object-cover' src="/program-dokter.png" />
                   <p className='text-center mt-8 text-xl md:text-2xl font-light text-zinc-600'>Doctor Visit</p>
                 </div>
                 <div>
-                  <img className='rounded-xl h-full object-cover' src="/program-movie.png" />
+                  <img className='sm:rounded-xl h-full object-cover' src="/program-movie.png" />
                   <p className='text-center mt-8 text-xl md:text-2xl font-light text-zinc-600'>Movie Day</p>
                 </div>
               </Carousel>
@@ -160,7 +160,7 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                   />
                 </div>
-                <div className='text-white mt-6 mx-10 text-center'>
+                <div className='text-white mt-6 sm:mx-10 text-center'>
                   <p className='text-base lg:text-xl font-light'>“Menurut saya Nurfahmi Daycare merupakan support system yang sangat membantu dalam mendidik anak-anak saya.”</p>
                   <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Athaya</h3>
                   <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2019</p>
@@ -175,7 +175,7 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                   />
                 </div>
-                <div className='text-white mt-6 mx-10 text-center'>
+                <div className='text-white mt-6 sm:mx-10 text-center'>
                   <p className='text-base lg:text-xl font-light'>“Sekolah di Nurfahmi Daycare, tempat anak belajar pendidikan usia sejak dini. Ngajinya dapet, sopan santun dan adabnya punterpenuhi.”</p>
                   <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Aishaa Adinda</h3>
                   <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2020</p>
@@ -190,7 +190,7 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                   />
                 </div>
-                <div className='text-white mt-6 mx-10 text-center'>
+                <div className='text-white mt-6 sm:mx-10 text-center'>
                   <p className='text-base lg:text-xl font-light'>“Selama bersekolah di Nurfahmi, saya tidak khawatir anak saya bertutur kata yang tidak baik”</p>
                   <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Afid</h3>
                   <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2020</p>
