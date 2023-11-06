@@ -92,10 +92,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Special Program */}
+        {/* Gallery */}
         <div className='bg-stone-100'>
           <div className='mx-auto max-w-screen-xl mt-16 lg:mt-36 py-12 lg:py-24'>
-            <h2 className='text-center text-amber-400 text-3xl md:text-4xl lg:text-5xl font-semibold'>Special Program</h2>
+            <h2 className='text-center text-amber-400 text-3xl md:text-4xl lg:text-5xl font-semibold'>Gallery</h2>
             <div className='mt-24 text-center'>
               <Carousel
                 className='mx-12 sm:mx-32 lg:mx-64 inline-block'
@@ -150,53 +150,50 @@ export default function Home() {
         <div className='bg-amber-400'>
           <div className='mx-auto max-w-screen-xl py-12 lg:py-24'>
             <h2 className='text-center text-white text-3xl md:text-4xl lg:text-5xl font-semibold'>Testimonials</h2>
-            <div className='lg:flex justify-between mt-12 lg:mt-24'>
+            <div className='lg:grid lg:grid-cols-3 mt-12 lg:mt-24'>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4 lg:-translate-x-1'
-                    src="/testimony-person.png"
-                    alt="hero"
+                  <Image className='transform translate-y-1 lg:translate-y-4'
+                    src="/woman-muslim-svgrepo-com-2.svg"
+                    alt="testimonials-person"
                     fill
                     style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div className='text-white mt-6 mx-10 text-center'>
-                  <p className='text-base lg:text-xl font-light'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. ”</p>
-                  <h3 className='text-base lg:text-xl font-bold mt-6'>Hanif</h3>
-                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2022</p>
+                  <p className='text-base lg:text-xl font-light'>“Menurut saya Nurfahmi Daycare merupakan support system yang sangat membantu dalam mendidik anak-anak saya.”</p>
+                  <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Athaya</h3>
+                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2019</p>
                 </div>
               </div>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4 lg:-translate-x-1'
-                    src="/testimony-person.png"
-                    alt="hero"
+                  <Image className='transform translate-y-1 lg:translate-y-4'
+                    src="/woman-muslim-svgrepo-com-2.svg"
+                    alt="testimonials-person"
                     fill
                     style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div className='text-white mt-6 mx-10 text-center'>
-                  <p className='text-base lg:text-xl font-light'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. ”</p>
-                  <h3 className='text-base lg:text-xl font-bold mt-6'>Hanif</h3>
-                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2022</p>
+                  <p className='text-base lg:text-xl font-light'>“Sekolah di Nurfahmi Daycare, tempat anak belajar pendidikan usia sejak dini. Ngajinya dapet, sopan santun dan adabnya punterpenuhi.”</p>
+                  <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Aishaa Adinda</h3>
+                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2020</p>
                 </div>
               </div>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4 lg:-translate-x-1'
-                    src="/testimony-person.png"
-                    alt="hero"
+                  <Image className='transform translate-y-1 lg:translate-y-4'
+                    src="/woman-muslim-svgrepo-com.svg"
+                    alt="testimonials-person"
                     fill
                     style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div className='text-white mt-6 mx-10 text-center'>
-                  <p className='text-base lg:text-xl font-light'>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. ”</p>
-                  <h3 className='text-base lg:text-xl font-bold mt-6'>Hanif</h3>
-                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2022</p>
+                  <p className='text-base lg:text-xl font-light'>“Selama bersekolah di Nurfahmi, saya tidak khawatir anak saya bertutur kata yang tidak baik”</p>
+                  <h3 className='text-base lg:text-xl font-bold mt-6'>Bunda Afid</h3>
+                  <p className='text-base lg:text-xl font-light mt-2'>Orang tua murid 2020</p>
                 </div>
               </div>
             </div>
@@ -207,8 +204,7 @@ export default function Home() {
           <div className='grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-16 items-center mx-4'>
             <div className='col-span-1 lg:col-span-2'>
               <h2 className='text-center lg:text-left text-amber-400 text-3xl md:text-4xl lg:text-5xl font-semibold'>Location</h2>
-              <h3 className='text-center lg:text-left my-12 text-zinc-600 text-xl md:text-2xl font-normal'>Jalan Pramuka No. 36
-                Dekat Green Pramuka Tower<br /><br />Office hour: 07.00 - 17.30</h3>
+              <h3 className='text-center lg:text-left my-12 text-zinc-600 text-xl md:text-2xl font-normal'>Komplek Cempaka Putih Indah Kavling 45, Jakarta Pusat<br /><br />Jam Operasional: 07.00 - 17.30</h3>
               <Link href={"https://goo.gl/maps/T5TZrdyp7SvVj1fm7"}>
                 <div className='hover:bg-gray-100 hover:border-gray-600 flex justify-center items-center py-2 px-4 rounded-md border border-gray-500'>
                   <Image src={"/logo/icons8-google-maps.svg"} height={48} width={48} alt='google-maps-new'></Image>
@@ -226,8 +222,8 @@ export default function Home() {
           <div className='mx-auto max-w-screen-xl lg:mt-36 py-12 lg:py-24'>
             <div>
               <h2 className=' text-center text-amber-400 text-3xl md:text-4xl lg:text-5xl font-semibold'>Start Your Journey</h2>
-              <p className='mt-12 text-zinc-600 text-xl md:text-2xl text-center mx-12 lg:mx-48 font-bold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. </p>
+              <p className='mt-12 text-zinc-600 text-xl md:text-2xl text-center mx-12 lg:mx-48 font-normal'>Pendidikan anak di usia dini menjadi tanggung jawab orang tua mengemban amanah dari Allah subhanahu wa ta'ala sekaligus investasi besar bagi diri anak di masa depannya.<br /><br />
+                Kami siap membantu Ayah dan Bunda mewujudkannya.</p>
             </div>
             <div className='mt-12 text-center'>
               <Link className='text-center py-2 px-4 rounded-xl text-xl mx-auto text-white bg-blue-500'
