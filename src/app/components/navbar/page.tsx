@@ -6,7 +6,90 @@ import Link from 'next/link';
 import { Poppins } from 'next/font/google';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import ContactUs from '@/app/(homepage)/contact-us-modal/page';
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
+
+function ContactUs({
+    isDisplayed = false,
+    onClose,
+}: {
+    isDisplayed: boolean;
+    onClose: () => void;
+}) {
+    return (
+        <>
+            <Transition show={isDisplayed} as={Fragment}>
+                <Dialog as="div" className="relative z-30" onClose={onClose}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 bg-black/25" />
+                    </Transition.Child>
+                    <div className="fixed inset-0 overflow-y-auto">
+                        <div className="flex min-h-full items-center justify-center p-4 text-center">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                            >
+                                <Dialog.Panel className="w-full max-w-sm md:max-w-md xl:max-w-xl transform overflow-hidden rounded-2xl bg-yellow-400 border-2 border-amber-500 p-6 shadow-xl transition-all">
+                                    <div className="text-right">
+                                        <button
+                                            type="button"
+                                            className="text-white font-extrabold fixed top-4 right-4 drop-shadow"
+                                            onClick={onClose}
+                                        >
+                                            <XMarkIcon className="block h-6 w-6 " />
+                                        </button>
+                                    </div>
+                                    <Dialog.Title as="h3" className="text-2xl md:text-3xl lg:text-4xl text-center font-medium text-white drop-shadow">
+                                        Contact Us
+                                    </Dialog.Title>
+                                    <div className="mt-8">
+                                        <div className="mx-16 my-4">
+                                            <Link href={"https://wa.link/w2n28j"}>
+                                                <div className="flex items-center justify-center">
+                                                    <div>
+                                                        <Image src={"/logo/icons8-whatsapp.svg"} height={48} width={48} alt='google-maps-new' className="drop-shadow"></Image>
+                                                    </div>
+                                                    <p className="text-base md:text-lg xl:text-xl text-white ml-2 drop-shadow">
+                                                        Ms Hawa
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                        <div className="mx-16 my-4">
+                                            <Link href={"https://wa.link/b8ig6f"}>
+                                                <div className="flex items-center text-center justify-center">
+                                                    <div>
+                                                        <Image src={"/logo/icons8-whatsapp.svg"} height={48} width={48} alt='google-maps-new' className="drop-shadow"></Image>
+                                                    </div>
+                                                    <p className="text-base md:text-lg xl:text-xl text-white ml-2 drop-shadow">
+                                                        Bu Yekti
+                                                    </p>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </Transition>
+        </>
+    );
+}
 
 
 const poppins = Poppins({
@@ -31,7 +114,7 @@ export default function Navbar() {
                                         <div className='relative h-16 md:h-24 w-24 md:w-40'>
                                             <Link href={"/"}>
                                                 <Image
-                                                    src="/nurfahmi-logo.png"
+                                                    src="/nurfahmi-logo-transparent.png"
                                                     alt="Logo"
                                                     fill
                                                     style={{ objectFit: "contain" }}
@@ -42,7 +125,7 @@ export default function Navbar() {
                                             <Link className='text-zinc-600' href={"/about-us-page"}>
                                                 About Us
                                             </Link>
-                                            <Link className='text-zinc-600' href={"/under-construction-page"}>
+                                            <Link className='text-zinc-600' href={"/programs-page"}>
                                                 Programs
                                             </Link>
                                             <button className='text-zinc-600' onClick={() => setIsShowing(!isShowing)}>Contact Us</button>
@@ -63,12 +146,12 @@ export default function Navbar() {
                                 </div>
                                 <div className='bg-blue-300 lg:hidden rounded-b-3xl absolute w-full z-20 text-center'>
                                     <Disclosure.Panel className="text-gray-500 mx-8 py-4">
-                                        <a href='/under-construction-page'>
+                                        <a href='/about-us-page'>
                                             <div className='py-1 px-4 my-2 text-slate-600'>
                                                 About Us
                                             </div>
                                         </a>
-                                        <a href='/under-construction-page'>
+                                        <a href='/programs-page'>
                                             <div className='py-1 px-4 my-2 text-slate-600'>
                                                 Programs
                                             </div>

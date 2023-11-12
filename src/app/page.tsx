@@ -52,22 +52,17 @@ export default function Home() {
     <main className={baloo.className}>
       <div>
         {/* Hero Section */}
-        <div className='bg-gradient-to-t from-cyan-400 to-white bg-[length:10000px_430px] md:bg-[length:10000px_415px] xl:bg-[length:10000px_560px] bg-no-repeat'>
-          <div className='mx-auto max-w-screen-xl'>
-            <h1 className='mt-8 md:mt-12 text-center text-4xl lg:text-6xl text-amber-400 font-bold'>NURFAHMI DAYCARE</h1>
-            <p className='text-zinc-600 text-xl md:text-2xl text-center mt-10 mx-12 md:mx-48 font-bold'>We provide your child with nurturing care and valuable knowledge</p>
-            <div>
-              <div className='w-full text-center mt-12 md:mt-9'>
+        <div>
+          <img src="/hero2.jpg" alt="playing-puzzle" className='h-[65vh] w-full object-cover' />
+        </div>
+        <div className='bg-stone-100'>
+          <div className='mx-auto max-w-screen-xl pt-4 '>
+            <div className='pb-8 pt-6 rounded-xl px-10'>
+              <h1 className='text-center text-3xl sm:text-4xl lg:text-6xl text-amber-400 font-bold'>NURFAHMI DAYCARE</h1>
+              <p className='text-zinc-600 text-base sm:text-xl md:text-2xl text-center mt-4 font-bold'>We provide your child with nurturing care and valuable knowledge</p>
+              <div className='w-full text-center pt-12 md:pt-9'>
                 <Link className='text-center py-2 px-4 rounded-xl text-xl text-white bg-blue-500'
                   href={"https://docs.google.com/forms/d/e/1FAIpQLScSJeSatDSZGKoqB4M5ghURY5fz41KbqseWU24GMfyQxqs2aw/formResponse"}>Register Now</Link>
-              </div>
-              <div className='relative mx-auto w-[270px] h-[150px] md:w-[600px] md:h-[300px] xl:w-[1024px] xl:h-[500px]'>
-                <Image
-                  src="/kindergarten-hero.png"
-                  alt="hero"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
               </div>
             </div>
           </div>
