@@ -165,8 +165,8 @@ export default function aboutUs() {
                                     />
                                 </div>
                                 <div className='text-white md:hidden md:text-right'>
-                                    <h3 className='text-base md:text-xl lg:text-3xl font-bold'>Mei 2019</h3>
-                                    <h4 className='text-base md:text-xl lg:text-3xl'>Akhirusannah 2018/2019</h4>
+                                    <h3 className='text-base md:text-xl lg:text-3xl font-bold'>Mei 2017</h3>
+                                    <h4 className='text-base md:text-xl lg:text-3xl'>Akhirusannah 2016/2017</h4>
                                 </div>
                             </div>
                             <div className='md:flex md:justify-center md:items-center mt-36 md:mt-72'>
