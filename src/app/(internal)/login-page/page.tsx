@@ -41,8 +41,11 @@ export default function LoginPage() {
 
     return (
         <>
-            <div className='text-center pt-40 bg-white'>
-                <div className='relative h-36 mx-auto'>
+            <header>
+                <title>Login Page - Nurfahmi Daycare</title>
+            </header>
+            <div className='text-center pt-20 md:pt-40 bg-white'>
+                <div className='relative h-24 md:h-36 mx-auto'>
                     <Image
                         className="mx-auto"
                         src="/nurfahmi-logo.png"
@@ -52,11 +55,11 @@ export default function LoginPage() {
                     ></Image>
                 </div>
                 <div className='my-10'>
-                <form onSubmit={handleFormSubmit}>
+                    <form onSubmit={handleFormSubmit}>
                         <div className='my-2'>
                             <input
                                 type="text"
-                                className='bg-[#fbff10] outline-none w-96 px-8 py-6 rounded-xl text-xl border-amber-300 border-2 text-amber-600 placeholder-amber-600'
+                                className='bg-[#fbff10] outline-none w-48 md:w-96 px-4 md:px-8 py-3 md:py-6 rounded-xl text-sm md:text-xl border-amber-300 border-2 text-amber-600 placeholder-amber-600'
                                 placeholder='Username'
                                 value={formData.username}
                                 onChange={(e) => setFormData({ ...formData, username: e.target.value })}
@@ -64,14 +67,14 @@ export default function LoginPage() {
                         <div className='my-2'>
                             <input
                                 type="password"
-                                className='bg-[#fbff10] outline-none w-96 px-8 py-6 rounded-xl text-xl border-amber-300 border-2 text-amber-600 placeholder-amber-600'
+                                className='bg-[#fbff10] outline-none w-48 md:w-96 px-4 md:px-8 py-3 md:py-6 rounded-xl text-sm md:text-xl border-amber-300 border-2 text-amber-600 placeholder-amber-600'
                                 placeholder='Password'
                                 value={formData.password}
                                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                             /></div>
-                        <button type="submit" className='my-4 text-center py-2 px-10 rounded-xl text-xl mx-auto text-white bg-blue-500'>Login</button>
+                        <button type="submit" className='my-4 text-center py-2 px-10 rounded-xl text-base md:text-xl mx-auto text-white bg-blue-500'>Login</button>
                         <div>
-                            <Link className='underline' href={'https://google.com'}>Forgot Password</Link>
+                            <Link className='underline text-sm' href={'#'}>Forgot Password</Link>
                         </div>
                     </form>
                 </div>

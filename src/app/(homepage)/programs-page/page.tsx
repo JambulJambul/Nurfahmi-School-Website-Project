@@ -8,14 +8,14 @@ const baloo = Baloo_2({
     subsets: ['latin'],
 })
 
-function ProgramCards({ link, title, category, colorIs }: {link:string, title: string, category: string, colorIs: boolean}) {
+function ProgramCards({ link, title, category, colorIs }: { link: string, title: string, category: string, colorIs: boolean }) {
     return (
         <>
-            <div className={`${colorIs?'bg-amber-400':'bg-orange-500'}`}>
+            <div className={`${colorIs ? 'bg-amber-400' : 'bg-orange-500'}`}>
                 <div>
                     <img src={link} alt="" className="h-56 w-full object-cover" />
                 </div>
-                <div className={`${colorIs?'bg-amber-400':'bg-orange-500'}  text-white pt-4 lg:pt-7 px-4 pb-6 lg:pb-12`}>
+                <div className={`${colorIs ? 'bg-amber-400' : 'bg-orange-500'}  text-white pt-4 lg:pt-7 px-4 pb-6 lg:pb-12`}>
                     <div className="text-sm lg:text-base font-light">
                         {category}
                     </div>
@@ -50,6 +50,9 @@ pengenalan Life Skill melalui Pramuka Cilik, Fun Cooking, Berkebun, Market Day, 
 export default function programsPage() {
     return (
         <>
+            <header>
+                <title>Programs - Nurfahmi Daycare</title>
+            </header>
             <Navbar></Navbar>
             <main className={baloo.className}>
                 <div className="mx-auto max-w-screen-xl">

@@ -114,10 +114,11 @@ export default function Navbar() {
                                         <div className='relative h-16 md:h-24 w-24 md:w-40'>
                                             <Link href={"/"}>
                                                 <Image
+                                                    className='overflow-visible'
                                                     src="/nurfahmi-logo-transparent.png"
-                                                    alt="Logo"
+                                                    alt="nurfahmi daycare logo"
                                                     fill
-                                                    style={{ objectFit: "contain" }}
+                                                    style={{ objectFit: "cover" }}
                                                 />
                                             </Link>
                                         </div>
@@ -129,7 +130,7 @@ export default function Navbar() {
                                                 Programs
                                             </Link>
                                             <button className='text-zinc-600' onClick={() => setIsShowing(!isShowing)}>Contact Us</button>
-                                            <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/under-construction-page"}>
+                                            <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/login-page"}>
                                                 Student Login
                                             </Link>
                                         </div>
@@ -158,10 +159,10 @@ export default function Navbar() {
                                         </a>
                                         <div className='py-1 my-2'>
                                             <button className='text-zinc-600' onClick={() => setIsShowing(!isShowing)}>Contact Us</button>
-                                                
+
                                         </div>
                                         <div className='my-4'>
-                                            <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/under-construction-page"}>
+                                            <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/login-page"}>
                                                 Student Login
                                             </Link>
                                         </div>
