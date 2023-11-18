@@ -32,7 +32,7 @@ export default function aboutUs() {
                                     src="/about-us/nurfahmi-daycare-outing1.jpeg"
                                     alt="nurfahmi daycare outing 1"
                                     fill
-                                    style={{ objectFit: "contain" }}
+                                    style={{ objectFit: "cover" }}
                                 />
                             </div>
                             <div className='relative mx-auto w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[175px] md:h-[175px] lg:w-[200px] lg:h-[200px] bg-white rounded-full overflow-hidden border-2 sm:border-4 md:border-6 lg:border-8 border-amber-500'>

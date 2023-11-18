@@ -66,15 +66,15 @@ export default function programsPage() {
                         <h3 className='mt-1 md:mt-3'>DAILY PROGRAMS</h3>
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-x-2 md:gap-x-3 xl:gap-x-5 gap-y-10 mt-5 xl:mt-10'>
-                        <ProgramCards link={'/programs/diarypagi.png'} title={'Diary Pagi'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/circletime.png'} title={'Circle Time'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/bermain.png'} title={'Bermain'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/snackbuah.png'} title={'Snack Buah'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/tidursiang.png'} title={'Tidur Siang'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/shalatberjamaah.png'} title={'Shalat Berjamaah'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/makansiang.png'} title={'Makan Siang'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/hafalansurat.png'} title={'Hafalan Surat'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/makansore.png'} title={'Makan Sore'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/diarypagi.jpg'} title={'Diary Pagi'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/circletime.jpg'} title={'Circle Time'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/bermain.jpg'} title={'Bermain'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/snackbuah.jpg'} title={'Snack Buah'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/tidursiang.jpg'} title={'Tidur Siang'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/shalatberjamaah.jpg'} title={'Shalat Berjamaah'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/makansiang.jpg'} title={'Makan Siang'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/hafalansurat.jpg'} title={'Hafalan Surat'} category={'DAILY PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/makansore.jpg'} title={'Makan Sore'} category={'DAILY PROGRAM'} colorIs={true}></ProgramCards>
                     </div>
                 </div>
                 <div className='max-w-screen-xl mx-2 xl:mx-auto my-16'>
@@ -83,11 +83,11 @@ export default function programsPage() {
                         <h3 className='mt-1 md:mt-3'>EXCELLENCE PROGRAMS</h3>
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-x-2 md:gap-x-3 xl:gap-x-5 gap-y-10 mt-5 xl:mt-10'>
-                        <ProgramCards link={'/programs/funcooking.png'} title={'Fun Cooking'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/berkebun.png'} title={'Berkebun'} category={'EXCELLENCE PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/marketday.png'} title={'Market Day'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
-                        <ProgramCards link={'/programs/sentrabahanalam.png'} title={'Sentra Bahan Alam'} category={'EXCELLENCE PROGRAM'} colorIs={false}></ProgramCards>
-                        <ProgramCards link={'/programs/calistung.png'} title={'Calistung'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/funcooking.jpg'} title={'Fun Cooking'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/berkebun.jpg'} title={'Berkebun'} category={'EXCELLENCE PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/marketday.jpg'} title={'Market Day'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
+                        <ProgramCards link={'/programs/sentrabahanalam.jpg'} title={'Sentra Bahan Alam'} category={'EXCELLENCE PROGRAM'} colorIs={false}></ProgramCards>
+                        <ProgramCards link={'/programs/calistung.jpg'} title={'Calistung'} category={'EXCELLENCE PROGRAM'} colorIs={true}></ProgramCards>
                     </div>
                 </div>
             </main>

@@ -148,9 +148,9 @@ export default function Home() {
             <div className='lg:grid lg:grid-cols-3 mt-12 lg:mt-24'>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4'
-                    src="/woman-muslim-svgrepo-com-2.svg"
-                    alt="testimonials-person"
+                  <Image className='transform overflow-visible'
+                    src="/testimoni-nurfahmi-daycare-3.jpg"
+                    alt="testimoni-nurfahmi-daycare"
                     fill
                     style={{ objectFit: "cover" }}
                   />
@@ -163,9 +163,9 @@ export default function Home() {
               </div>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4'
-                    src="/woman-muslim-svgrepo-com-2.svg"
-                    alt="testimonials-person"
+                  <Image className='transform overflow-visible'
+                    src="/testimoni-nurfahmi-daycare-1.jpg"
+                    alt="testimoni-nurfahmi-daycare"
                     fill
                     style={{ objectFit: "cover" }}
                   />
@@ -178,9 +178,9 @@ export default function Home() {
               </div>
               <div className='border-white mx-12 p-6 border-2 my-4 lg:my-0 rounded-2xl'>
                 <div className='relative mx-auto w-[65px] h-[65px] lg:w-[131px] lg:h-[131px] bg-white rounded-full overflow-hidden'>
-                  <Image className='transform translate-y-1 lg:translate-y-4'
-                    src="/woman-muslim-svgrepo-com.svg"
-                    alt="testimonials-person"
+                  <Image className='transform overflow-visible'
+                    src="/testimoni-nurfahmi-daycare-2.jpg"
+                    alt="testimoni-nurfahmi-daycare"
                     fill
                     style={{ objectFit: "cover" }}
                   />
