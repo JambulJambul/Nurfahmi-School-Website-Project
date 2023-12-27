@@ -4,7 +4,7 @@ import Footer from '@/app/components/footer/page';
 import Image from 'next/image';
 import Link from 'next/link';
 import axios from 'axios';
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
     const router = useRouter();
@@ -16,17 +16,21 @@ export default function LoginPage() {
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [loginFailure, setLoginFailure] = useState(false);
 
-    const handleFormSubmit = async (e: React.FormEvent) => {
+    const handleFormSubmit = async (e:React.FormEvent) => {
         e.preventDefault();
-
         try {
-            const response = await axios.post('http://localhost:3001/login', formData);
-
-            if (response.data.authenticated) {
+            const response = await axios.post('http://localhost:3001/auth/login', JSON.stringify(formData),
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                withCredentials: true,
+            });
+            if (response.status === 200) {
                 console.log('Authentication successful');
                 setLoginSuccess(true);
                 setLoginFailure(false);
-                router.push('/');
+                router.push('/student-page');
             } else {
                 console.log('Authentication failed');
                 setLoginSuccess(false);
@@ -38,7 +42,6 @@ export default function LoginPage() {
             setLoginFailure(true);
         }
     };
-
     return (
         <>
             <header>
