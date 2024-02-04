@@ -130,9 +130,9 @@ export default function Navbar() {
                                                 Programs
                                             </Link>
                                             <button className='text-zinc-600' onClick={() => setIsShowing(!isShowing)}>Contact Us</button>
-                                            <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/login-page"}>
+                                            {/* <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/login-page"}>
                                                 Student Login
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                         <div className='lg:hidden items-center my-auto'>
                                             <Disclosure.Button>
