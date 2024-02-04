@@ -161,11 +161,11 @@ export default function Navbar() {
                                             <button className='text-zinc-600' onClick={() => setIsShowing(!isShowing)}>Contact Us</button>
 
                                         </div>
-                                        <div className='my-4'>
+                                        {/* <div className='my-4'>
                                             <Link className='py-2 px-4 rounded-xl text-white bg-amber-500' href={"/login-page"}>
                                                 Student Login
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </Disclosure.Panel>
                                 </div>
                             </div>
