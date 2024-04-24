@@ -52,7 +52,7 @@ function ContactUs({
                                             <XMarkIcon className="block h-6 w-6 " />
                                         </button>
                                     </div>
-                                    <Dialog.Title as="h3" className="text-2xl md:text-3xl lg:text-4xl text-center font-medium text-white drop-shadow">
+                                    <Dialog.Title as="h3" className="md:text-3xl text-2xl lg:text-4xl text-center font-medium text-white drop-shadow">
                                         Contact Us
                                     </Dialog.Title>
                                     <div className="mt-8">
